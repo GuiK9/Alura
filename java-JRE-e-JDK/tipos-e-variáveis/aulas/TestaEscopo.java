@@ -3,8 +3,13 @@ public class TestaEscopo {
         System.out.println("testando condicionais2");
 
         int idade = 20;
-        int quantidadePessoas = 3;
-        boolean acompanhado = quantidadePessoas > 1; 
+        int quantidadePessoas = 1;
+        boolean acompanhado; 
+        if(quantidadePessoas >= 2 ){
+            acompanhado = true;
+        } else {
+            acompanhado = false; 
+        }
 
 
         if (idade >= 18 && acompanhado) {
