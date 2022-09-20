@@ -11,9 +11,12 @@ public class TestaGerente {
         System.out.println(g1.getSalario());
         System.out.println(g1.getCpf());
 
+        g1.setSenha(1222);
         boolean autenticou = g1.autentica(1222);
 
         System.out.println(autenticou);
+
+        System.out.println(g1.getbonificacao());
 
 
     }
