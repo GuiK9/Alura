@@ -1,4 +1,4 @@
-public class ContaPoupanca extends Conta{
+public class ContaPoupanca extends Conta implements Tributavel{
 
 
     public ContaPoupanca(int agencia, int numero) {
@@ -8,5 +8,10 @@ public class ContaPoupanca extends Conta{
     @Override
     public void deposita(double valor) {
         super.saldo += valor;
+    }
+
+    @Override
+    public double getValorImposto() {
+        return this.getSaldo() * 0.1;
     } 
 }
