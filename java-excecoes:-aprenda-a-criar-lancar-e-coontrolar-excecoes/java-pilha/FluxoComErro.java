@@ -3,7 +3,7 @@ public class FluxoComErro {
         System.out.println("Ini do main");
         try {
             metodo1();
-        } catch (ArithmeticException | NullPointerException | MinhaExecao ex) {
+        } catch (ArithmeticException | NullPointerException ex) {
             System.out.println("Expection " + ex.getMessage());
             ex.printStackTrace();
         }
@@ -14,7 +14,6 @@ public class FluxoComErro {
     private static void metodo1() {
         System.out.println("Ini do metodo1");
         metodo2();
-
         System.out.println("Fim do metodo1");
     }
 
