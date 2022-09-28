@@ -4,10 +4,9 @@ public class TesteSaca {
         conta.deposita(200);
         try {
             conta.saca(290);
-        } catch (Exception e) {
-           e.printStackTrace();
+        } catch (SaldoInsuficienteException e) {
+            System.out.println("Ex: " + e.getMessage());
         }
-        
 
         System.out.println(conta.getSaldo());
     }
