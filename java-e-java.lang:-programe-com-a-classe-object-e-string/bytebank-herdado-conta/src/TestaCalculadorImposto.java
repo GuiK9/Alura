@@ -1,3 +1,6 @@
+package teste;
+
+
 public class TestaCalculadorImposto {
     public static void main(String[] args) {
         CalculadorImposto ci = new CalculadorImposto();

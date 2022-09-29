@@ -1,3 +1,5 @@
+package teste;
+
 public class TestaContas {
     public static void main(String[] args) throws SaldoInsuficienteException{
         ContaCorrente cc = new ContaCorrente(111, 111);
