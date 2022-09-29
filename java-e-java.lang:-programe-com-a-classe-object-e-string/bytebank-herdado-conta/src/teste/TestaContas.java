@@ -1,5 +1,9 @@
 package teste;
 
+import modelo.ContaCorrente;
+import modelo.ContaPoupanca;
+import modelo.SaldoInsuficienteException;
+
 public class TestaContas {
     public static void main(String[] args) throws SaldoInsuficienteException{
         ContaCorrente cc = new ContaCorrente(111, 111);

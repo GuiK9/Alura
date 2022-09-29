@@ -1,5 +1,8 @@
 package teste;
 
+import modelo.ContaCorrente;
+import modelo.SeguroDeVida;
+import modelo.CalculadorImposto;
 
 public class TestaCalculadorImposto {
     public static void main(String[] args) {
