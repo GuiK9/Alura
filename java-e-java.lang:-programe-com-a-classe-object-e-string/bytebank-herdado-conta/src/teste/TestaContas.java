@@ -1,15 +1,11 @@
 package teste;
 
-import modelo.ContaCorrente;
-import modelo.ContaPoupanca;
-import modelo.SaldoInsuficienteException;
-
 public class TestaContas {
-    public static void main(String[] args) throws SaldoInsuficienteException{
-        ContaCorrente cc = new ContaCorrente(111, 111);
+    public static void main(String[] args) throws modelo.SaldoInsuficienteException{
+        modelo.ContaCorrente cc = new modelo.ContaCorrente(111, 111);
         cc.deposita(100.0);
 
-        ContaPoupanca cp = new ContaPoupanca(222, 222);
+        modelo.ContaPoupanca cp = new modelo.ContaPoupanca(222, 222);
         cp.deposita(200.0);
 
         cc.transfere(50, cp);
