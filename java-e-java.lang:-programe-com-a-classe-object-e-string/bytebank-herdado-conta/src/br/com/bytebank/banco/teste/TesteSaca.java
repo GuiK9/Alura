@@ -1,10 +1,9 @@
 package br.com.bytebank.banco.teste;
 
-import br.com.bytebank.banco.modelo.*;
-
+import br.com.bytebank.banco.modelo.*; 
 
 public class TesteSaca {
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         Conta conta = new ContaCorrente(123, 111);
         conta.deposita(200);
         try {
@@ -14,5 +13,5 @@ public class TesteSaca {
         }
 
         System.out.println(conta.getSaldo());
-    }
+    } 
 }

@@ -1,31 +1,32 @@
 package br.com.bytebank.banco.teste;
 
+import br.com.bytebank.banco.modelo.*;
 
 public class TestaCalculadorImposto {
     public static void main(String[] args) {
-        br.com.bytebank.banco.modelo.CalculadorImposto ci = new br.com.bytebank.banco.modelo.CalculadorImposto();
+        CalculadorImposto ci = new CalculadorImposto();
 
-        br.com.bytebank.banco.modelo.ContaCorrente contac1 = new br.com.bytebank.banco.modelo.ContaCorrente(222, 12123);
+        ContaCorrente contac1 = new ContaCorrente(222, 12123);
         contac1.deposita(1000);
         ci.registra(contac1);
 
 
-        br.com.bytebank.banco.modelo.ContaCorrente contac2 = new br.com.bytebank.banco.modelo.ContaCorrente(222, 12123);
+        ContaCorrente contac2 = new ContaCorrente(222, 12123);
         contac2.deposita(1000);
         ci.registra(contac2);
 
 
-        br.com.bytebank.banco.modelo.ContaCorrente contac3 = new br.com.bytebank.banco.modelo.ContaCorrente(222, 12123);
+        ContaCorrente contac3 = new ContaCorrente(222, 12123);
         contac3.deposita(1000);
         ci.registra(contac3);
 
-        br.com.bytebank.banco.modelo.SeguroDeVida seguro1 = new br.com.bytebank.banco.modelo.SeguroDeVida();
+        SeguroDeVida seguro1 = new SeguroDeVida();
         ci.registra(seguro1);
 
-        br.com.bytebank.banco.modelo.SeguroDeVida seguro2 = new br.com.bytebank.banco.modelo.SeguroDeVida();
+        SeguroDeVida seguro2 = new SeguroDeVida();
         ci.registra(seguro2);
 
-        br.com.bytebank.banco.modelo.SeguroDeVida seguro3 = new br.com.bytebank.banco.modelo.SeguroDeVida();
+        SeguroDeVida seguro3 = new SeguroDeVida();
         ci.registra(seguro3);
 
 

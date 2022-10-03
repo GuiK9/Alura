@@ -1,6 +1,6 @@
-package br.com.alura.bytebank;
 
-import br.com.bytebank.*;
+import br.com.bytebank.banco.modelo.*;
+
 
 public class TesteBiblioteca {
     public static void main(String[] args) {
