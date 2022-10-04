@@ -1,13 +1,13 @@
 package br.com.bytebank.banco.modelo;
 
 /**
- * Classe que representa a moldura de um cliente
- * @author Guilherme Sosua
- * @version 0.1
+ * Classe que representa um cliente no Bytebank 
  * 
+ * @author André Chaves
+ * @version 0.1
  */
-
 public class Cliente {
+
     private String nome;
     private String cpf;
     private String profissao;
@@ -30,4 +30,5 @@ public class Cliente {
     public void setProfissao(String profissao) {
         this.profissao = profissao;
     }
+
 }
