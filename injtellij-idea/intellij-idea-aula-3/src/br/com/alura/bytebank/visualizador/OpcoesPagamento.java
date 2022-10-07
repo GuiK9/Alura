@@ -1,7 +1,6 @@
 package br.com.alura.bytebank.visualizador;
-import br.com.alura.bytebank.io.LeitorPagamento;
+import br.com.alura.bytebank.io.LeitorCSV;
 import br.com.alura.bytebank.model.Pagamento;
-import br.com.alura.bytebank.registrador.RegistroDePagamento;
 import br.com.alura.bytebank.servico.ServicoPagamento;
 
 import java.io.IOException;
@@ -23,7 +22,7 @@ public class OpcoesPagamento {
         System.out.println("Informe o código do arquivo que deseja registrar os pagamentos:");
 
 
-        LeitorPagamento leitor = new LeitorPagamento();
+        LeitorCSV leitor = new LeitorCSV();
 
         apresentaArquivosDisponiveis(leitor);
 
@@ -41,7 +40,7 @@ public class OpcoesPagamento {
         }
     }
 
-    private void apresentaArquivosDisponiveis(LeitorPagamento leitor) {
+    private void apresentaArquivosDisponiveis(LeitorCSV leitor) {
         try {
             Iterator<Path> lista = leitor.lista();
             int i = 1;
