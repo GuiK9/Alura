@@ -1,194 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a17e863d-796a-47df-8908-8ba52aa2a43c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/bytebank-herdado-conta.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../injtellij-idea/intellij-idea-aula-3/src/br/com/alura/bytebank/io/LeitorPagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../injtellij-idea/intellij-idea-aula-3/src/br/com/alura/bytebank/io/LeitorPagamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../injtellij-idea/intellij-idea-aula-3/src/br/com/alura/bytebank/visualizador/OpcoesPagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../injtellij-idea/intellij-idea-aula-3/src/br/com/alura/bytebank/visualizador/OpcoesPagamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/.idea/java-e-java-util-colecoes-warappers-e-,ambda-expressions.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-biblioteca/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-biblioteca/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-biblioteca/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-biblioteca/bin/br/com/alura/bytebank/TesteBilbioteca.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-biblioteca/libs/bytebank-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-biblioteca/src/br/com/alura/bytebank/TesteBilbioteca.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-encapsulado/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-encapsulado/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-encapsulado/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-encapsulado/bin/Cliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-encapsulado/bin/Conta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-encapsulado/bin/TesteContas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-encapsulado/src/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-encapsulado/src/Conta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-encapsulado/src/TesteContas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/allclasses-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/allclasses-noframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/especial/ContaEspecial.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/especial/class-use/ContaEspecial.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/especial/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/especial/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/especial/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/especial/package-use.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/CalculadorDeImposto.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/Cliente.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/Conta.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/ContaCorrente.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/ContaPoupanca.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/SaldoInsuficienteException.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/SeguroDeVida.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/Tributavel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/class-use/CalculadorDeImposto.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/class-use/Cliente.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/class-use/Conta.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/class-use/ContaCorrente.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/class-use/ContaPoupanca.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/class-use/SaldoInsuficienteException.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/class-use/SeguroDeVida.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/class-use/Tributavel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/modelo/package-use.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/test/TesteContas.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/test/TesteSaca.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/test/TesteTributaveis.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/test/class-use/TesteContas.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/test/class-use/TesteSaca.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/test/class-use/TesteTributaveis.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/test/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/test/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/test/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/br/com/bytebank/banco/test/package-use.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/constant-values.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/deprecated-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/help-doc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/index-files/index-1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/index-files/index-2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/index-files/index-3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/index-files/index-4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/index-files/index-5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/index-files/index-6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/index-files/index-7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/index-files/index-8.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/external/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/images/ui-icons_222222_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/images/ui-icons_454545_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/images/ui-icons_888888_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/jquery-1.10.2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/jquery-ui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/jquery-ui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/jquery-ui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/jquery-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/jquery-ui.structure.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/jquery-ui.structure.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/jszip-utils/dist/jszip-utils-ie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/jszip-utils/dist/jszip-utils-ie.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/jszip-utils/dist/jszip-utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/jszip-utils/dist/jszip-utils.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/jszip/dist/jszip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/jquery/jszip/dist/jszip.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/member-search-index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/member-search-index.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/overview-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/overview-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/overview-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/package-list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/package-search-index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/package-search-index.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/resources/glass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/resources/x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/serialized-form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/type-search-index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/doc/type-search-index.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/src/br/com/bytebank/banco/especial/ContaEspecial.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/src/br/com/bytebank/banco/modelo/CalculadorDeImposto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/src/br/com/bytebank/banco/modelo/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/src/br/com/bytebank/banco/modelo/Conta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/src/br/com/bytebank/banco/modelo/ContaCorrente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/src/br/com/bytebank/banco/modelo/ContaPoupanca.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/src/br/com/bytebank/banco/modelo/SaldoInsuficienteException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/src/br/com/bytebank/banco/modelo/SeguroDeVida.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/src/br/com/bytebank/banco/modelo/Tributavel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/src/br/com/bytebank/banco/test/Teste.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/src/br/com/bytebank/banco/test/TesteContas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/src/br/com/bytebank/banco/test/TesteSaca.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/src/br/com/bytebank/banco/test/TesteString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado-conta/src/br/com/bytebank/banco/test/TesteTributaveis.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/bin/Administrador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/bin/AutenticacaoUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/bin/Autenticavel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/bin/Cliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/bin/ControleBonificacao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/bin/Designer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/bin/EditorVideo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/bin/Funcionario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/bin/Gerente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/bin/SistemaInterno.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/bin/TesteFuncionario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/bin/TesteGerente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/bin/TesteReferencias.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/bin/TesteSistema.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/src/Administrador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/src/AutenticacaoUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/src/Autenticavel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/src/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/src/ControleBonificacao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/src/Designer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/src/EditorVideo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/src/Funcionario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/src/Gerente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/src/SistemaInterno.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/src/TesteFuncionario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/src/TesteGerente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/src/TesteReferencias.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/bytebank-herdado/src/TesteSistema.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/bin/Conexao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/bin/Conta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/bin/Fluxo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/bin/FluxoComError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/bin/FluxoComTratamento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/bin/MinhaExcecao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/bin/TestaContaComExcecaoChecked.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/bin/TesteConexao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/src/Conexao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/src/Conta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/src/Fluxo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/src/FluxoComError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/src/FluxoComTratamento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/src/MinhaExcecao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/src/TestaContaComExcecaoChecked.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java-e-java-util-colecoes-warappers-e-lambda-expressions/java-pilha/src/TesteConexao.java" beforeDir="false" />
+    <list default="true" id="a17e863d-796a-47df-8908-8ba52aa2a43c" name="Changes" comment="classe">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/TesteArrayPrimitivos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/TesteArrayReferencias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bytebank/banco/modelo/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/modelo/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/TesteObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -207,10 +39,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "/home/guilherme/Documentos/GitHub/Alura/java-util-e-java-lang/bytebank-herdado-conta",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.idesettings.quicklists"
@@ -248,6 +82,14 @@
       <option name="presentableId" value="Default" />
       <updated>1665062673684</updated>
     </task>
+    <task id="LOCAL-00001" summary="classe">
+      <created>1665149277689</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665149277689</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,5 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="classe" />
+    <option name="LAST_COMMIT_MESSAGE" value="classe" />
   </component>
 </project>
