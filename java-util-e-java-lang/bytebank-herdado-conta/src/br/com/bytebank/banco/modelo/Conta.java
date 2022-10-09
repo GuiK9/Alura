@@ -1,6 +1,8 @@
 package br.com.bytebank.banco.modelo;
 
 
+import java.util.ArrayList;
+
 /**
  * Classe representa a moldura de uma conta
  * 
@@ -96,5 +98,19 @@ public abstract class Conta extends Object {
 	public String toString() {
 		return "Agencia: " + this.agencia +  " numero: " + this.numero;
 	}
+
+    public boolean ehIgual(ArrayList lista){
+
+        for (Object oRef: lista) {
+            String teste = this.toString();
+            String teste2 = oRef.toString();
+
+            if(oRef == this){
+                System.out.println("aaaaaaaaaaaaaaa");
+                return true;
+            }
+        }
+        return false;
+    }
 
 }
