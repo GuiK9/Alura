@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a17e863d-796a-47df-8908-8ba52aa2a43c" name="Changes" comment="classe">
-      <change afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/util/TesteArrayListEquals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bytebank-herdado-conta.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bytebank-herdado-conta.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/modelo/Conta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/modelo/Conta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/Teste.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/bytebank/banco/modelo/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/modelo/Conta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/util/Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/util/TesteArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/util/TesteArrayListEquals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/util/TesteArrayListEquals.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,24 +33,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/guilherme/Documentos/GitHub/Alura/java-util-e-java-lang/bytebank-herdado-conta",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "Errors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/guilherme/Documentos/GitHub/Alura/java-util-e-java-lang/bytebank-herdado-conta&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.bytebank.banco.teste.util" />

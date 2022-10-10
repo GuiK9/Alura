@@ -4,12 +4,14 @@ import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class TesteArrayListEquals {
 
     public static void main(String[] args) {
         //Generics
-        ArrayList<Conta> lista = new ArrayList<Conta>();
+        List<Conta> lista = new ArrayList<Conta>();
 
         Conta cc = new ContaCorrente(11, 34);
         lista.add(cc);
@@ -18,20 +20,13 @@ public class TesteArrayListEquals {
         lista.add(cc2);
 
         Conta cc3 = new ContaCorrente(11, 31);
+        boolean existe = lista.contains(cc3);
 
-        //boolean existe = true; = lista.contains(cc3);
+        System.out.println("já existe? " + existe);
 
-        if(cc3.ehIgual(lista)){
-            System.out.println("Já existe!!!");
+        for (Object conta : lista) {
+            System.out.println(conta);
         }
-
-        //System.out.println("já existe? " + existe);
-
-
-
-//        for (Object oRef : lista) {
-//            System.out.println(oRef);
-//        }
 
 
     }
