@@ -6,6 +6,7 @@ import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -43,16 +44,19 @@ public class Teste {
         lista.add(cc4);
 
         for (Conta conta : lista) {
-            System.out.println(conta);
+            System.out.println(conta + "; Saldo: " + conta.getSaldo());
         }
-        NumeroDaContaComparator numeroComparator = new NumeroDaContaComparator();
-        TitularDaContaComparator titularComparator = new TitularDaContaComparator();
-        lista.sort(titularComparator);
+//        NumeroDaContaComparator numeroComparator = new NumeroDaContaComparator();
+//        TitularDaContaComparator titularComparator = new TitularDaContaComparator();
+
+        //lista.sort(new TitularDaContaComparator());
+        Collections.sort(lista);
+        //Collections.sort(lista, new NumeroDaContaComparator());
 
         System.out.println("------------");
 
         for (Conta conta : lista) {
-            System.out.println(conta);
+            System.out.println(conta + "; Saldo: " + conta.getSaldo());
         }
 
     }
@@ -62,6 +66,8 @@ class TitularDaContaComparator implements Comparator<Conta>{
 
     @Override
     public int compare(Conta c1, Conta c2) {
+        //return c1.getTitular().getNome().compareTo(c2.getTitular().getNome());
+
         String nomeC1 = c1.getTitular().getNome();
         String nomeC2 = c2.getTitular().getNome();
 
@@ -71,6 +77,9 @@ class TitularDaContaComparator implements Comparator<Conta>{
 class NumeroDaContaComparator implements Comparator<Conta>{
     @Override
     public int compare(Conta c1, Conta c2) {
-        return c1.getNumero() - c2.getNumero();
+
+        return Integer.compare(c1.getNumero(), c2.getNumero());
+
+        //return c1.getNumero() - c2.getNumero();
     }
 }
