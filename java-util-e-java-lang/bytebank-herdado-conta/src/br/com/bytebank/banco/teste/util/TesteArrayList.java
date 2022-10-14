@@ -4,12 +4,14 @@ import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Vector;
 
 public class TesteArrayList {
 
     public static void main(String[] args) {
         //Generics
-        ArrayList<Conta> lista = new ArrayList<Conta>();
+        List<Conta> lista = new Vector<Conta>();
 
         Conta cc = new ContaCorrente(11, 34);
         lista.add(cc);
