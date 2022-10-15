@@ -5,34 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a17e863d-796a-47df-8908-8ba52aa2a43c" name="Changes" comment="classe">
-      <change afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/util/TesteOrdenacao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/especial/ContaEspecial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/modelo/CalculadorDeImposto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/modelo/Cliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/modelo/Conta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/modelo/ContaCorrente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/modelo/ContaPoupanca.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/modelo/GuardadorDeReferencias.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/modelo/SaldoInsuficienteException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/modelo/SeguroDeVida.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/modelo/Tributavel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/test/TesteContas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/test/TesteObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/test/TesteString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/test/TesteTributaveis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/TestArrayString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/TesteArrayPrimitivos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/TesteArrayReferencias.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/TesteSaca.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/TesteguardadorDeReferencia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/NumeroDaContaComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/Teste.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/TesteArrayList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/TesteArrayListEquals.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/TesteOutrosWrappers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/TesteWrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/TitularDaContaComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/Teste$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/Teste$NumeroDaContaComparator2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/Teste$TitularDaContaComparator2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/Teste.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/Teste.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/util/Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/util/Teste.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +64,7 @@
       <recent name="br.com.bytebank.banco.teste.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestArrayString">
+  <component name="RunManager">
     <configuration name="TestArrayString" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.bytebank.banco.teste.TestArrayString" />
       <module name="bytebank-herdado-conta" />
