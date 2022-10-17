@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a17e863d-796a-47df-8908-8ba52aa2a43c" name="Changes" comment="classe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/Teste$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/Teste$NumeroDaContaComparator2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/Teste$TitularDaContaComparator2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/Teste.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/teste/util/Teste.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/util/Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/util/Teste.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +59,7 @@
       <recent name="br.com.bytebank.banco.teste.util" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TestArrayString">
     <configuration name="TestArrayString" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.bytebank.banco.teste.TestArrayString" />
       <module name="bytebank-herdado-conta" />
