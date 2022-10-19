@@ -13,7 +13,7 @@ public class TesteEscritaPrintStreamPrintWriter {
 
         long inicioDoCodigo = System.currentTimeMillis();
 
-        PrintWriter ps = new PrintWriter("lorem2.txt");
+        PrintWriter ps = new PrintWriter("lorem2.txt", "UTF-8");
 
 
 
