@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a17e863d-796a-47df-8908-8ba52aa2a43c" name="Changes" comment="classe">
-      <change afterPath="$PROJECT_DIR$/cc.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/io/TesteDeserializacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/io/TesteSerializacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../input-output/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../input-output/cliente.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../input-output/src/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../input-output/src/TesteSerilizacaoCliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/modelo/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/modelo/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bytebank/banco/modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/modelo/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bytebank/banco/modelo/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/modelo/Conta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../input-output/out/production/input-output/TesteSerilizacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../input-output/out/production/input-output/TesteSerilizacao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../input-output/src/TesteSerilizacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../input-output/src/TesteSerilizacao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
