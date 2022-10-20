@@ -3,7 +3,6 @@ import java.io.*;
 public class TesteSerilizacao {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         String nome = "Guilherme Sousa";
-
 //        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("objeto.bin"));
 //        oos.writeObject(nome);
 

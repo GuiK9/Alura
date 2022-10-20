@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a17e863d-796a-47df-8908-8ba52aa2a43c" name="Changes" comment="classe">
+      <change afterPath="$PROJECT_DIR$/cc.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/io/TesteDeserializacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/teste/io/TesteSerializacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../input-output/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../input-output/cliente.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../input-output/src/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../input-output/src/TesteSerilizacaoCliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/modelo/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bytebank-herdado-conta/br/com/bytebank/banco/modelo/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bytebank/banco/modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/modelo/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bytebank/banco/modelo/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bytebank/banco/modelo/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../input-output/out/production/input-output/TesteSerilizacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../input-output/out/production/input-output/TesteSerilizacao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../input-output/src/TesteSerilizacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../input-output/src/TesteSerilizacao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +56,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/guilherme/Documentos/GitHub/Alura/java-io/input-output",
+    "last_opened_file_path": "/home/guilherme/Documentos/GitHub/Alura/java-io/bytebank-herdado-conta",
     "project.structure.last.edited": "SDK Location",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -59,7 +71,7 @@
       <recent name="br.com.bytebank.banco.teste.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestArrayString">
+  <component name="RunManager">
     <configuration name="TestArrayString" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.bytebank.banco.teste.TestArrayString" />
       <module name="bytebank-herdado-conta" />
