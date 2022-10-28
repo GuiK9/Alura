@@ -1,6 +1,5 @@
 package br.com.bytebank.banco.teste.io;
 
-import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 
 import java.io.FileInputStream;

@@ -2,34 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3f4050f-6a98-426e-ac0a-8573d0766937" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/input-output/src/TesteUnicodeEncoding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input-output/src/teste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output/contas.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input-output/contas.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output/src/TesteEscritaPrintStreamPrintWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/input-output/src/TesteEscritaPrintStreamPrintWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output/src/TesteLeitura.java" beforeDir="false" afterPath="$PROJECT_DIR$/input-output/src/TesteLeitura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/contas.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/input-output2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/lorem.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/lorem2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/out/production/input-output2/br/com/alura/java/io/teste/Teste.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/out/production/input-output2/br/com/alura/java/io/teste/TesteCopiarArquivo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/out/production/input-output2/br/com/alura/java/io/teste/TesteEscrita.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/out/production/input-output2/br/com/alura/java/io/teste/TesteEscritaFileWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/out/production/input-output2/br/com/alura/java/io/teste/TesteEscritaPrintStreamPrintWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/out/production/input-output2/br/com/alura/java/io/teste/TesteLeitura.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/out/production/input-output2/br/com/alura/java/io/teste/TesteLeitura2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/src/Teste.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/src/TesteCopiarArquivo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/src/TesteEscrita.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/src/TesteEscritaFileWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/src/TesteEscritaPrintStreamPrintWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/src/TesteLeitura.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-output2/src/TesteLeitura2.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-collections/gerenciador-de-cursos/src/Aula.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-collections/gerenciador-de-cursos/src/Curso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-collections/gerenciador-de-cursos/src/TestaCurso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-collections/gerenciador-de-cursos/src/TestaListaDeAula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-collections/gerenciador-de-cursos/src/TestandoListas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-collections/gerenciador-de-cursos/src/TestandoListas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,18 +18,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2GMdF8Ib5sCPj3s0AjzhVwaCFwN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/guilherme/Documentos/GitHub/Alura/java-io/bytebank-herdado-conta",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/guilherme/Documentos/GitHub/Alura/java-io/bytebank-herdado-conta&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
