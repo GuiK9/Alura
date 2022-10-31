@@ -1,6 +1,7 @@
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Aluno {
+public class Aluno /*implements Comparable*/ {
     private String nome;
     private int numeroMatricula;
 
@@ -38,8 +39,12 @@ public class Aluno {
         return Objects.hash(nome, numeroMatricula);
     }
 
-
-    //    @Override
+//    @Override
+//    public int compareTo(Object o) {
+//        Aluno aluno = (Aluno) o;
+//        return this.nome.compareTo(aluno.getNome());
+//    }
+//    @Override
 //    public boolean equals(Object nomeOutro) {
 //        return nomeOutro.equals(this.nome);
 //    }

@@ -40,13 +40,4 @@ public class Curso {
         return alunos.contains(a);
     }
 
-    public boolean estaMatriculadoNome(String nome) {
-        for (Aluno a: alunos
-        ) {
-           if (a.equals(nome)) {
-               return true;
-           }
-        }
-        return false;
-    }
 }
