@@ -6,7 +6,7 @@ public class TestaCursoComAluno {
         javaColecoes.adiciona(new Aula("Criando uma Aula", 20));
         javaColecoes.adiciona(new Aula("Modelando com coleções", 24));
 
-        Aluno a1 = new Aluno("Rodrigo Turine", 34672);
+        Aluno a1 = new Aluno("Rodrigo Turini", 34672);
         Aluno a2 = new Aluno("Guilherme Silveira", 56317);
         Aluno a3 = new Aluno("Mauricio Anchie", 17632);
 
@@ -16,6 +16,14 @@ public class TestaCursoComAluno {
 
         System.out.println("Todos os alunos matriculados no curso: ");
         javaColecoes.getAlunos().forEach(aluno -> System.out.println(aluno));
+
+        System.out.println("O aluno " + a1 + " está matriculado? ");
+        System.out.println(javaColecoes.estaMatriculado(a1));
+
+        Aluno turini = new Aluno("Rodrigo Turini", 34672);
+        System.out.println(a1.equals(turini));
+
+        //System.out.println(javaColecoes.estaMatriculadoNome("Rodrigo Turini") + " ======");
 
     }
 }
