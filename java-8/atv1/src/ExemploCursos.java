@@ -10,11 +10,15 @@ public class ExemploCursos {
         cursos.add(new Curso("Java 8", 113));
         cursos.add(new Curso("C", 55));
 
-        cursos.sort(Comparator.comparing(Curso::getAlunos));
+        cursos.sort(Comparator.comparingInt(Curso::getAlunos));
         //cursos.forEach(curso -> System.out.println(curso.getAlunos()));
-        cursos.stream()
-                .filter(c -> c.getAlunos() >= 100)
-                .forEach(c -> System.out.println(c.getNome()));
+        int sum  = cursos.stream()
+                .filter(c -> c.getAlunos() >= 50)
+                .mapToInt(Curso::getAlunos)
+                .sum();
+        System.out.println(sum);
+
+        cursos.stream().map(Curso::getNome).forEach(System.out::println);
     }
 }
 
