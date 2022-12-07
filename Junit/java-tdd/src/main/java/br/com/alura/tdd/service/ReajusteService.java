@@ -12,8 +12,8 @@ public class ReajusteService {
         if(funcionario.getSalario().doubleValue() > 10000){
             throw new SalarioMuitoAltoException(funcionario.getSalario());
         }
-        BigDecimal reajuste = desempenho.percentualReajuste();
-        funcionario.reajustarSalario(reajuste);
+        BigDecimal percentual = desempenho.percentualReajuste();
+        funcionario.reajustarSalario(percentual);
 
     }
 }
