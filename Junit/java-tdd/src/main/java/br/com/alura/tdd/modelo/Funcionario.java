@@ -31,7 +31,8 @@ public class Funcionario {
 		this.salario = salario.setScale(2);
 	}
 
-	public void reajustarSalario(BigDecimal aumento) {
-		setSalario(aumento.add(getSalario()));
+	public void reajustarSalario(BigDecimal reajuste) {
+		BigDecimal aumento = salario.multiply(reajuste);
+		setSalario(salario.add(aumento));
 	}
 }
