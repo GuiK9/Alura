@@ -9,11 +9,12 @@ import org.junit.jupiter.api.Test;
 
 public class BonusServiceTeste {
     @Test
-    void bonusDeveriaSerZeroParaFuncionarioComSalarioMuitoAlto() {
+    void bonusNaoDeveriaExistirParaFuncionarioComSalarioMuitoAlto() {
         BonusService service = new BonusService();
-        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+        try{
             BigDecimal bonus = service.calcularBonus(new Funcionario("Marcelo Azevedo De Paula", LocalDate.now(), new BigDecimal("12000")));
-        });
+            Assertions.fail("Funcionário com alto salário deveria lançar uma exception caso tentem calcular bônus");
+        } catch (Exception ignored) { };
     }
 
     @Test
@@ -27,7 +28,6 @@ public class BonusServiceTeste {
     @Test
     void bonusDeveriaSerZeroParaFuncionarioComMilDeSalario() {
         BonusService service = new BonusService();
-
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
             BigDecimal bonus = service.calcularBonus(new Funcionario("Marcelo Maria", LocalDate.now(), new BigDecimal("10000")));
         });

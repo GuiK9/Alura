@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 
 public class ReajusteService {
     public void concederReajuste(Funcionario funcionario, Desempenho desempenho){
-        if(funcionario.getSalario().doubleValue() > 10000){
+        if(funcionario.getSalario().doubleValue() >= 10000){
             throw new SalarioMuitoAltoException(funcionario.getSalario());
         }
         BigDecimal percentual = desempenho.percentualReajuste();
