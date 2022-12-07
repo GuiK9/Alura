@@ -1,5 +1,6 @@
 package br.com.alura.tdd.service;
 
+import br.com.alura.tdd.exceptions.SalarioMuitoAltoException;
 import br.com.alura.tdd.modelo.Desempenho;
 import br.com.alura.tdd.modelo.Funcionario;
 import org.junit.jupiter.api.Assertions;
@@ -37,6 +38,16 @@ public class ReajusteServiceTest {
         service.concederReajuste(funcionario, Desempenho.OTIMO);
 
         Assertions.assertEquals(new BigDecimal("1200.00"), funcionario.getSalario());
+    }
+
+    @Test
+    void DeveDarExceptionPorSalarioSerMuitoAlto() {
+        ReajusteService service = new ReajusteService();
+        Funcionario funcionario = new Funcionario("Guilherme", LocalDate.now(), new BigDecimal("11000.00"));
+
+
+        Assertions.assertThrows(SalarioMuitoAltoException.class, () -> service.concederReajuste(funcionario, Desempenho.OTIMO)
+        );
     }
 }
 
