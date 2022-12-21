@@ -1,7 +1,9 @@
-package org.example;
+package main.java.org.example;
 
-import org.example.model.NotaFiscal;
-import org.example.wsclient.NotaFiscalWSClient;
+
+
+import main.java.org.example.model.NotaFiscal;
+import main.java.org.example.wsclient.NotaFiscalWSClient;
 
 import java.time.LocalDate;
 import java.util.List;

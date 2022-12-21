@@ -1,6 +1,8 @@
-package org.example.wsclient;
+package main.java.org.example.wsclient;
 
-import org.example.model.NotaFiscal;
+
+import main.java.org.example.model.NotaFiscal;
+
 public class NotaFiscalWSClient {
 
 	public void enviar(NotaFiscal nf) {
