@@ -1,4 +1,4 @@
-// Java code to illustrate Reentrant Locks
+package org.exampleLock;// Java code to illustrate Reentrant Locks
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.ExecutorService;
