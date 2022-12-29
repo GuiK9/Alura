@@ -1,12 +1,9 @@
 package org.example2;
 
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
-
 public class Banheiro {
 
     private boolean eSujo = true;
-    private Lock lock = new ReentrantLock();
+//  private final Lock lock = new ReentrantLock();
 
     public void fazNumero1() {
         String nome = Thread.currentThread().getName();
@@ -17,17 +14,15 @@ public class Banheiro {
         synchronized (this) {
             System.out.println(nome + " entrando no banheiro");
 
-            if (eSujo) {
-                esperalaFora(nome);
+            while (eSujo) {
+                esperaLaFora(nome);
             }
 
             System.out.println(nome + " fazendo coisa rápida");
 
-            try {
-                Thread.sleep(5000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+            dormeUmPouco(5000);
+
+            this.eSujo = true;
 
             System.out.println(nome + " dando descarga");
             System.out.println(nome + " lavando a mão");
@@ -46,17 +41,15 @@ public class Banheiro {
         synchronized (this) {
             System.out.println(nome + " entrando no banheiro");
 
-            if (eSujo) {
-                esperalaFora(nome);
+            while (eSujo) {
+                esperaLaFora(nome);
             }
 
             System.out.println(nome + " fazendo coisa demorada");
 
-            try {
-                Thread.sleep(10000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+            dormeUmPouco(10000);
+
+            this.eSujo = true;
 
             System.out.println(nome + " dando descarga");
             System.out.println(nome + " lavando a mão");
@@ -64,7 +57,17 @@ public class Banheiro {
         }
     }
 
-    private void esperalaFora(String nome) {
+    private void dormeUmPouco(int millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        } finally {
+            this.notify();
+        }
+    }
+
+    private void esperaLaFora(String nome) {
         System.out.println(nome + " eca, banheiro ta sujo");
         try {
             this.wait();
@@ -89,16 +92,9 @@ public class Banheiro {
             System.out.println(nome + " limpando banheiro");
             eSujo = false;
 
-            try {
-                Thread.sleep(13000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-
+            dormeUmPouco(13000);
             this.notify();
 
-            System.out.println(nome + " dando descarga");
-            System.out.println(nome + " lavando a mão");
             System.out.println(nome + " saindo do banheiro");
         }
 
