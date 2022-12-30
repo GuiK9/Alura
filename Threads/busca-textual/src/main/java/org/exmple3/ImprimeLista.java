@@ -11,7 +11,6 @@ public class ImprimeLista implements Runnable {
     public void run() {
 
         synchronized (lista){
-
             if(!lista.estaCheia()){
                 try {
                     System.out.println("indo esperar aguardando notificação");
