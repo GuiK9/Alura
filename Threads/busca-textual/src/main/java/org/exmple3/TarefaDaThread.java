@@ -4,9 +4,9 @@ import java.util.List;
 
 public class TarefaDaThread implements Runnable {
     private int numeroDaThread;
-    private List<String> lista;
+    private Lista lista;
 
-    public TarefaDaThread(List<String> lista, int numeroDaThread) {
+    public TarefaDaThread(Lista lista, int numeroDaThread) {
         this.lista = lista;
         this.numeroDaThread = numeroDaThread;
     }
@@ -14,7 +14,7 @@ public class TarefaDaThread implements Runnable {
     @Override
     public void run() {
         for (int j = 0; j < 100; j++) {
-            lista.add(" " + j + " - thread " + numeroDaThread);
+            lista.adicionaElementos(" " + j + " - thread " + numeroDaThread);
         }
     }
 }
