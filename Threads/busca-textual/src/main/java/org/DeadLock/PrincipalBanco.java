@@ -7,5 +7,7 @@ public class PrincipalBanco {
         GerenciadorDeTransacao tx = new GerenciadorDeTransacao();
         PoolDeConexao pool = new PoolDeConexao();
 
+        new Thread(new TarefaAcessarBanco(tx, pool)).start();
+        new Thread(new TarefaAcessarBancoProcedimento(tx, pool)).start();
     }
 }

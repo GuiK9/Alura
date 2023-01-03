@@ -4,5 +4,5 @@
 *.iml
 java-io/.idea/
 **/target/
-
+**/assets/Hiss**
 
