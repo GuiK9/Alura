@@ -1,16 +1,13 @@
-package org.servidor;
+package org.testeSalas.servidor;
 
 import java.io.PrintStream;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class DistribuirTarefas implements Runnable {
+public class DistribuidorDeChats implements Runnable{
     private final Socket socket;
-    private final ServidorTarefas servidor;
-
-    public DistribuirTarefas(Socket socket, ServidorTarefas servidor) {
+    public DistribuidorDeChats(Socket socket) {
         this.socket = socket;
-        this.servidor = servidor;
     }
 
     @Override
@@ -19,22 +16,21 @@ public class DistribuirTarefas implements Runnable {
         try {
             Scanner entradaCliente = new Scanner(socket.getInputStream());
             PrintStream saidaCliente = new PrintStream(socket.getOutputStream());
-            while (entradaCliente.hasNextLine()) {
+            while(entradaCliente.hasNextLine()){
                 String comando = entradaCliente.nextLine();
                 System.out.println("comando recebido " + comando);
                 switch (comando) {
-                    case "c1" -> saidaCliente.println("confirmação comando c1");
-                    case "c2" -> saidaCliente.println("confirmação cliente c2");
-                    case "fim" -> {
-                        saidaCliente.println("Desligando o servidor ");
-                        servidor.parar();
+                    case "c1" -> {
+                        saidaCliente.println("confirmação entrada para sala: c1");
+                        new Thread(new sala(socket)).start();
+                        saidaCliente.close();
+                        entradaCliente.close();
                     }
+                    case "c2" -> saidaCliente.println("confirmação cliente c2");
                     default -> saidaCliente.println("comando não encontrado");
                 }
                 System.out.println(comando);
             }
-            saidaCliente.close();
-            entradaCliente.close();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
