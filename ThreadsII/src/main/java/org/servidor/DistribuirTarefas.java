@@ -15,10 +15,26 @@ public class DistribuirTarefas implements Runnable{
         System.out.println("Distribuindo tarefas para: " + socket.getPort());
         try {
             Scanner entradaCliente = new Scanner(socket.getInputStream());
+            PrintStream saidaCliente = new PrintStream(socket.getOutputStream());
             while(entradaCliente.hasNextLine()){
                 String comando = entradaCliente.nextLine();
+                System.out.println("comando recebido " + comando);
+                switch (comando){
+                    case "c1": {
+                        saidaCliente.println("confirmação comando c1");
+                        break;
+                    }
+                    case "c2": {
+                        saidaCliente.println("confirmação cliente c2");
+                        break;
+                    }
+                    default: {
+                        saidaCliente.println("comando não encontrado");
+                    }
+                }
                 System.out.println(comando);
             }
+            saidaCliente.close();
             entradaCliente.close();
         } catch (Exception e) {
             throw new RuntimeException(e);
