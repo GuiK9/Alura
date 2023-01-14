@@ -5,7 +5,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class DistribuirTarefas implements Runnable{
-    private Socket socket;
+    private final Socket socket;
     public DistribuirTarefas(Socket socket) {
         this.socket = socket;
     }
@@ -19,18 +19,10 @@ public class DistribuirTarefas implements Runnable{
             while(entradaCliente.hasNextLine()){
                 String comando = entradaCliente.nextLine();
                 System.out.println("comando recebido " + comando);
-                switch (comando){
-                    case "c1": {
-                        saidaCliente.println("confirmação comando c1");
-                        break;
-                    }
-                    case "c2": {
-                        saidaCliente.println("confirmação cliente c2");
-                        break;
-                    }
-                    default: {
-                        saidaCliente.println("comando não encontrado");
-                    }
+                switch (comando) {
+                    case "c1" -> saidaCliente.println("confirmação comando c1");
+                    case "c2" -> saidaCliente.println("confirmação cliente c2");
+                    default -> saidaCliente.println("comando não encontrado");
                 }
                 System.out.println(comando);
             }
