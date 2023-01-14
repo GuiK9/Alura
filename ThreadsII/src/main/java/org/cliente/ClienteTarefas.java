@@ -10,46 +10,40 @@ public class ClienteTarefas {
         Socket socket = new Socket("localhost", 12345);
         System.out.println("Conexão estabelecida");
 
-        Thread threadEnviaComando = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("pode enviar comandos");
-                Scanner teclado = new Scanner(System.in);
-                PrintStream saida = null;
-                try {
-                    saida = new PrintStream(socket.getOutputStream());
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-                while (teclado.hasNextLine()) {
-                    String linha = teclado.nextLine();
-                    if (linha.trim().equals("")) {
-                        break;
-                    }
-                    saida.println(linha);
-                }
-                saida.close();
-                teclado.close();
-
+        Thread threadEnviaComando = new Thread(() -> {
+            System.out.println("pode enviar comandos");
+            Scanner teclado = new Scanner(System.in);
+            PrintStream saida;
+            try {
+                saida = new PrintStream(socket.getOutputStream());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
             }
+            while (teclado.hasNextLine()) {
+                String linha = teclado.nextLine();
+                if (linha.trim().equals("")) {
+                    break;
+                }
+                saida.println(linha);
+            }
+            saida.close();
+            teclado.close();
+
         });
 
-        Thread threadRecebeResposta = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("recebendo dados do servidor!!");
-                Scanner respostaServidor = null;
-                try {
-                    respostaServidor = new Scanner(socket.getInputStream());
-                    while (respostaServidor.hasNextLine()) {
-                        String linha = respostaServidor.nextLine();
-                        System.out.println(linha);
-                    }
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
+        Thread threadRecebeResposta = new Thread(() -> {
+            System.out.println("recebendo dados do servidor!!");
+            Scanner respostaServidor;
+            try {
+                respostaServidor = new Scanner(socket.getInputStream());
+                while (respostaServidor.hasNextLine()) {
+                    String linha = respostaServidor.nextLine();
+                    System.out.println(linha);
                 }
-                respostaServidor.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
             }
+            respostaServidor.close();
         });
         threadEnviaComando.start();
         threadRecebeResposta.start();
