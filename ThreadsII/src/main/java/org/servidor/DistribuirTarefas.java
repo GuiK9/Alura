@@ -23,7 +23,10 @@ public class DistribuirTarefas implements Runnable {
                 String comando = entradaCliente.nextLine();
                 System.out.println("comando recebido " + comando);
                 switch (comando) {
-                    case "c1" -> saidaCliente.println("confirmação comando c1");
+                    case "c1" -> {
+                        saidaCliente.println("confirmação comando c1");
+                        ComandoC1 c1 = new ComandoC1(saidaCliente);
+                    }
                     case "c2" -> saidaCliente.println("confirmação cliente c2");
                     case "fim" -> {
                         saidaCliente.println("Desligando o servidor ");
