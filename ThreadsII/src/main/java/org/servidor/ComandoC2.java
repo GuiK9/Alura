@@ -2,16 +2,16 @@ package org.servidor;
 
 import java.io.PrintStream;
 
-public class ComandoC1 implements Runnable{
+public class ComandoC2 implements Runnable{
     private final PrintStream saidaCliente;
 
-    ComandoC1(PrintStream saidaCliente){
+    ComandoC2(PrintStream saidaCliente){
         this.saidaCliente = saidaCliente;
     }
 
     @Override
     public void run() {
-        System.out.println("Executando Comando c1");
+        System.out.println("Executando Comando c2");
 
         try{
             Thread.sleep(20000);
@@ -19,6 +19,6 @@ public class ComandoC1 implements Runnable{
             throw new RuntimeException(E);
         }
 
-        saidaCliente.println("Comando c1 executado com sucesso!");
+        saidaCliente.println("Comando c2 executado com sucesso!");
     }
 }

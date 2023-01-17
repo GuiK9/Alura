@@ -11,12 +11,12 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class ServidorTarefas {
     private final ServerSocket servidor;
     private final ExecutorService threadPool;
-    private AtomicBoolean estaRodando;
+    private final AtomicBoolean estaRodando;
 
     public ServidorTarefas() throws IOException {
         System.out.println("----- iniciando o servidor -----");
         this.servidor = new ServerSocket(12345);
-        this.threadPool = Executors.newCachedThreadPool();
+        this.threadPool = Executors.newFixedThreadPool(4); //newCachedThreadPool();
         this.estaRodando = new AtomicBoolean(true);
     }
     public static void main(String[] args) throws Exception {
@@ -28,7 +28,7 @@ public class ServidorTarefas {
         while(this.estaRodando.get()){
             try {
                 Socket socket = servidor.accept();
-                DistribuirTarefas distribuirTarefas = new DistribuirTarefas(socket, this);
+                DistribuirTarefas distribuirTarefas = new DistribuirTarefas(threadPool, socket, this);
                 threadPool.execute(distribuirTarefas);
             } catch (SocketException e) {
                 System.out.println("SocketException, está rodando? " + this.estaRodando);
