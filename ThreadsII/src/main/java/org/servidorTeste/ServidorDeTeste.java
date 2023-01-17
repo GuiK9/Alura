@@ -12,7 +12,7 @@ public class ServidorDeTeste {
 
     private void rodar() {
 
-        new Thread(new Runnable() {
+        Thread thread = new Thread(new Runnable() {
 
             public void run() {
                 System.out.println("Servidor começando, estaRodando = " + estaRodando);
@@ -31,7 +31,10 @@ public class ServidorDeTeste {
 
                 System.out.println("Servidor terminando, estaRodando = " + estaRodando);
             }
-        }).start();
+        });
+
+        thread.setUncaughtExceptionHandler(new TratadorDeExecao());
+        thread.start();
     }
 
     private void alterandoAtributo() throws InterruptedException {
