@@ -11,18 +11,25 @@ public class ServidorDeTeste {
     }
 
     private void rodar() {
+
         new Thread(new Runnable() {
 
             public void run() {
-                System.out.println("Servidor começando, estaRodando = " + estaRodando );
+                System.out.println("Servidor começando, estaRodando = " + estaRodando);
 
-                while(!estaRodando) {}
+                while (!estaRodando) {
+                }
 
-                System.out.println("Servidor rodando, estaRodando = " + estaRodando );
+                if (estaRodando) {
+                    throw new RuntimeException("Deu erro na thread .... ");
+                }
 
-                while(estaRodando) {}
+                System.out.println("Servidor rodando, estaRodando = " + estaRodando);
 
-                System.out.println("Servidor terminando, estaRodando = " + estaRodando );
+                while (estaRodando) {
+                }
+
+                System.out.println("Servidor terminando, estaRodando = " + estaRodando);
             }
         }).start();
     }
@@ -34,6 +41,6 @@ public class ServidorDeTeste {
 
         Thread.sleep(5000);
         System.out.println("Main alterando estaRodando = false");
-        estaRodando = false;        
+        estaRodando = false;
     }
 }
