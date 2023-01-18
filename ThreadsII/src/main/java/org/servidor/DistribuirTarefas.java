@@ -40,9 +40,8 @@ public class DistribuirTarefas implements Runnable {
                         saidaCliente.println("Desligando o servidor ");
                         servidor.parar();
                     }
-                    default -> saidaCliente.println("comando não encontrado");
+                    default -> saidaCliente.println("comando " + comando + " não encontrado");
                 }
-                System.out.println(comando);
             }
             saidaCliente.close();
             entradaCliente.close();
