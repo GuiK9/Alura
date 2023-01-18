@@ -1,4 +1,4 @@
-package org.teste1;
+package org.testes.teste1;
 
 import java.io.FileReader;
 import java.util.Properties;

@@ -1,4 +1,4 @@
-package org.servidor;
+package org.projeto1.servidor;
 
 import java.util.concurrent.ThreadFactory;
 

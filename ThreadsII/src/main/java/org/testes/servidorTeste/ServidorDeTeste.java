@@ -1,4 +1,4 @@
-package org.servidorTeste;
+package org.testes.servidorTeste;
 
 public class ServidorDeTeste {
 

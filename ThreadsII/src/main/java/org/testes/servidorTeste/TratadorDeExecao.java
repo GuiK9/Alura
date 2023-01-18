@@ -1,4 +1,4 @@
-package org.servidorTeste;
+package org.testes.servidorTeste;
 
 public class TratadorDeExecao implements Thread.UncaughtExceptionHandler {
     @Override

@@ -1,8 +1,7 @@
-package org.teste1;
+package org.testes.teste1;
 
-import org.servidor.TratadorDeExecao;
+import org.projeto1.servidor.TratadorDeExecao;
 
-import java.io.FileReader;
 import java.util.Properties;
 
 public class Principal {

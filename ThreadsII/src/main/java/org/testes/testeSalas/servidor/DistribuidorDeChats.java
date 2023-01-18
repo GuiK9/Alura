@@ -1,4 +1,4 @@
-package org.testeSalas.servidor;
+package org.testes.testeSalas.servidor;
 
 import java.io.PrintStream;
 import java.net.Socket;

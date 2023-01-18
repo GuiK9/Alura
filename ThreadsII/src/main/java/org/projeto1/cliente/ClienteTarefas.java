@@ -1,4 +1,4 @@
-package org.cliente;
+package org.projeto1.cliente;
 
 import java.io.IOException;
 import java.io.PrintStream;

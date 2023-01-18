@@ -1,4 +1,4 @@
-package org.testeSalas.cliente;
+package org.testes.testeSalas.cliente;
 
 import java.io.IOException;
 import java.io.PrintStream;

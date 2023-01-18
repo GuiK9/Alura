@@ -1,4 +1,4 @@
-package org.testeSchedule;
+package org.testes.testeSchedule;
 
 import javax.sound.sampled.*;
 import java.io.File;
