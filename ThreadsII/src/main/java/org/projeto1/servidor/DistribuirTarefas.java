@@ -36,9 +36,10 @@ public class DistribuirTarefas implements Runnable {
                         saidaCliente.println("confirmação cliente c2");
                         ComandoC2ChamaWS c2WS = new ComandoC2ChamaWS(saidaCliente);
                         ComandoC2AcessaBanco c2Banco = new ComandoC2AcessaBanco(saidaCliente);
-                        Future<String> futureWS = this.threadPool.submit(c2Banco);
-                        Future<String> futureBanco = this.threadPool.submit(c2WS);
-                        String resultadoWS = futureWS.get();
+                        Future<String> futureWS = this.threadPool.submit(c2WS);
+                        Future<String> futureBanco = this.threadPool.submit(c2Banco);
+                        System.out.println(futureBanco.toString());
+                        this.threadPool.submit(new TrabalhaResultadosComandoC1EC2(futureWS, futureBanco, saidaCliente));
                     }
                     case "fim" -> {
                         saidaCliente.println("Desligando o servidor ");

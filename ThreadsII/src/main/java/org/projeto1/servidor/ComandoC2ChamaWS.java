@@ -15,7 +15,7 @@ public class ComandoC2ChamaWS implements Callable<String> {
     public String call() throws Exception {
         System.out.println("Servidor recebeu Comando c2 - WS");
         saidaCliente.println("Processando comando c2 - WS");
-        Thread.sleep(20000);
+        Thread.sleep(15000);
         int numero = new Random().nextInt(100) + 1;
         saidaCliente.println("Servidor finalizou o comando c2 - WS");
         return Integer.toString(numero);
