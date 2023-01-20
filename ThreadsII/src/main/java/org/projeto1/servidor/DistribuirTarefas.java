@@ -43,7 +43,10 @@ public class DistribuirTarefas implements Runnable {
                         Future<String> futureBanco = this.threadPool.submit(c2Banco);
                         this.threadPool.submit(new TrabalhaResultadosComandoC1EC2(futureWS, futureBanco, saidaCliente));
                     } case "c3" -> {
+                        System.out.println("quantidade de comandos " + filaComandos.size());
+                        System.out.println(filaComandos);
                         this.filaComandos.put(comando);//blocks
+                        System.out.println(filaComandos);
                         saidaCliente.println("Comando c3 adicionado na fila");
                     }
                     case "fim" -> {

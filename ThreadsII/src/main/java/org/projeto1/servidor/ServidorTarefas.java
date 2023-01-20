@@ -14,15 +14,25 @@ public class ServidorTarefas {
     private final ServerSocket servidor;
     private final ExecutorService threadPool;
     private final AtomicBoolean estaRodando;
-    private BlockingQueue<String> filaComandos;
+    private final BlockingQueue<String> filaComandos;
 
     public ServidorTarefas() throws IOException {
         System.out.println("----- iniciando o servidor -----");
         this.servidor = new ServerSocket(12345);
-        this.threadPool = Executors.newFixedThreadPool(4, new FabricaDeThreads()); //newCachedThreadPool();
+        this.threadPool = Executors.newCachedThreadPool(new FabricaDeThreads()); //newCachedThreadPool();
         this.estaRodando = new AtomicBoolean(true);
         this.filaComandos = new ArrayBlockingQueue<>(2);
+        iniciarConsumidores();
     }
+
+    private void iniciarConsumidores() {
+        int qtdConsumidores = 2;
+        for (int i = 0; i < qtdConsumidores; i++) {
+            TarefaConsumir tarefa = new TarefaConsumir(filaComandos);
+            this.threadPool.execute(tarefa);
+        }
+    }
+
     public static void main(String[] args) throws Exception {
         ServidorTarefas servidor = new ServidorTarefas();
         servidor.rodar();
