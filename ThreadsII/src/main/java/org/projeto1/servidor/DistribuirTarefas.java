@@ -3,6 +3,7 @@ package org.projeto1.servidor;
 import java.io.PrintStream;
 import java.net.Socket;
 import java.util.Scanner;
+import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
 
@@ -10,11 +11,13 @@ public class DistribuirTarefas implements Runnable {
     private final Socket socket;
     private final ServidorTarefas servidor;
     private final ExecutorService threadPool;
+    private final BlockingQueue<String> filaComandos;
 
-    public DistribuirTarefas(ExecutorService threadPool, Socket socket, ServidorTarefas servidor) {
+    public DistribuirTarefas(ExecutorService threadPool, BlockingQueue<String> filaComandos, Socket socket, ServidorTarefas servidor) {
         this.socket = socket;
         this.threadPool = threadPool;
         this.servidor = servidor;
+        this.filaComandos = filaComandos;
     }
 
     @Override
@@ -38,8 +41,10 @@ public class DistribuirTarefas implements Runnable {
                         ComandoC2AcessaBanco c2Banco = new ComandoC2AcessaBanco(saidaCliente);
                         Future<String> futureWS = this.threadPool.submit(c2WS);
                         Future<String> futureBanco = this.threadPool.submit(c2Banco);
-                        System.out.println(futureBanco.toString());
                         this.threadPool.submit(new TrabalhaResultadosComandoC1EC2(futureWS, futureBanco, saidaCliente));
+                    } case "c3" -> {
+                        this.filaComandos.put(comando);//blocks
+                        saidaCliente.println("Comando c3 adicionado na fila");
                     }
                     case "fim" -> {
                         saidaCliente.println("Desligando o servidor ");
