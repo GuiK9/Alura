@@ -7,9 +7,8 @@ public class TestaListagem {
         ConnectionFactory connectionFactory = new ConnectionFactory();
         Connection con = connectionFactory.recuperarconexao();
 
-        Statement stm = con.createStatement();
-        boolean resultados = stm.execute("SELECT ID, NOME, DESCRICAO FROM PRODUTO");
-        System.out.println(resultados);
+         PreparedStatement stm = con.prepareStatement("SELECT ID, NOME, DESCRICAO FROM PRODUTO");
+        stm.execute();
         ResultSet rst = stm.getResultSet();
         while (rst.next()){
             Integer id = rst.getInt("ID");
