@@ -9,4 +9,24 @@ public class Produto {
         this.nome = nome;
         this.descricao = descricao;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setId(int anInt) {
+        id = anInt;
+    }
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", descricao='" + descricao + '\'' +
+                '}';
+    }
 }
