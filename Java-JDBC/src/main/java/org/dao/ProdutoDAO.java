@@ -1,15 +1,17 @@
-package org.classes.lojaVirtualRepository;
+package org.dao;
+
+import org.classes.lojaVirtualRepository.ConnectionFactory;
+import org.classes.lojaVirtualRepository.Produto;
 
 import java.sql.*;
-import java.util.*;
 
-public class PersistenciaProduto {
+public class ProdutoDAO {
     private Connection connection;
     private PreparedStatement pstm;
     private ResultSet rst;
     private Produto produto;
 
-    public PersistenciaProduto() {
+    public ProdutoDAO() {
 
     }
 
@@ -25,7 +27,7 @@ public class PersistenciaProduto {
         return this.produto;
     }
 
-    public void salvarProduto(Produto produto) throws SQLException {
+    public void salvar(Produto produto) throws SQLException {
         this.connect();
         String sql = "INSERT INTO PRODUTO (NOME, DESCRICAO) VALUES (?, ?);";
         this.pstm = this.connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
