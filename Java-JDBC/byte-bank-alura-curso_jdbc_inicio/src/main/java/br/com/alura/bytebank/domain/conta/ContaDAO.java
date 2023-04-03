@@ -1,9 +1,7 @@
 package br.com.alura.bytebank.domain.conta;
 
-import br.com.alura.bytebank.ConnectionFactory;
 import br.com.alura.bytebank.domain.cliente.Cliente;
 import br.com.alura.bytebank.domain.cliente.DadosCadastroCliente;
-import com.mysql.cj.protocol.Resultset;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
@@ -70,5 +68,52 @@ public class ContaDAO {
         throw new RuntimeException(e);
     }
         return contas;
+    }
+
+    public Conta listarPorNumero(Integer numero){
+        PreparedStatement ps;
+        String sql = ("SELECT * FROM conta WHERE numero = ?;");
+        try {
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1, numero);
+
+            ResultSet rs = ps.executeQuery();
+
+
+            rs.next();
+            Integer numeroDB = rs.getInt(1);
+            BigDecimal saldo = rs.getBigDecimal(2);
+            String nome = rs.getString(3);
+            String cpf = rs.getString(4);
+            String email = rs.getString(5);
+
+            Cliente cliente = new Cliente(new DadosCadastroCliente(nome, cpf, email));
+            Conta conta = new Conta(numeroDB, cliente);
+
+            ps.close();
+            rs.close();
+            conn.close();
+            return conta;
+
+        }catch (SQLException e){
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void alterar(Integer numero, BigDecimal valor){
+        PreparedStatement ps;
+        String sql = "UPDATE conta SET saldo = ?, WHERE numero = ?";
+
+        try{
+            ps = conn.prepareStatement(sql);
+
+            ps.setBigDecimal(1, valor);
+            ps.setInt(2, numero);
+            ps.execute();
+            ps.close();
+            conn.close();
+        }catch (SQLException e){
+            throw new RuntimeException(e);
+        }
     }
 }
