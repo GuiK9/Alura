@@ -146,7 +146,7 @@ public class BytebankApplication {
         System.out.println("Digite o número da conta buscada:");
         var numeroDaConta = teclado.nextInt();
 
-        var conta = service.BuscarPorNumero(numeroDaConta);
+        var conta = service.buscarPorNumero(numeroDaConta);
 
         System.out.println(conta);
         System.out.println("Pressione qualquer tecla e de ENTER para voltar ao menu principal");

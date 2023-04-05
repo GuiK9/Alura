@@ -102,7 +102,7 @@ public class ContaDAO {
 
     public void alterar(Integer numero, BigDecimal valor){
         PreparedStatement ps;
-        String sql = "UPDATE conta SET saldo = ?, WHERE numero = ?";
+        String sql = "UPDATE conta SET saldo = ? WHERE numero = ?";
 
         try{
             ps = conn.prepareStatement(sql);
@@ -113,6 +113,7 @@ public class ContaDAO {
             ps.close();
             conn.close();
         }catch (SQLException e){
+            System.out.println("===========flag=========");
             throw new RuntimeException(e);
         }
     }
