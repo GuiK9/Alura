@@ -43,6 +43,8 @@ public class ContaService {
         }
 
         conta.sacar(valor);
+        Connection conn = connection.recuperarConexao();
+        new ContaDAO(conn).alterar(conta.getNumero(), conta.getSaldo());
     }
 
     public void realizarDeposito(Integer numeroDaConta, BigDecimal valor) {
