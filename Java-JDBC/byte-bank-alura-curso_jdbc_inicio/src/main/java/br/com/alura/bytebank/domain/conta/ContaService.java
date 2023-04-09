@@ -5,7 +5,6 @@ import br.com.alura.bytebank.domain.RegraDeNegocioException;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
-import java.util.HashSet;
 import java.util.Set;
 
 public class ContaService {
@@ -14,8 +13,6 @@ public class ContaService {
     public ContaService(){
         this.connection = new ConnectionFactory();
     }
-
-    private Set<Conta> contas = new HashSet<>();
 
     public Set<Conta> listarContasAbertas() {
         Connection conn = connection.recuperarConexao();
@@ -57,17 +54,18 @@ public class ContaService {
     }
 
     public void realizarTransferencia(Integer numeroDaContaOrigem, Integer numeroDaContaDestino, BigDecimal saldo) {
-        Connection conn = connection.recuperarConexao();
-        ContaDAO DAO = new ContaDAO(conn);
-        Conta contaOrigem = DAO.listarPorNumero(numeroDaContaOrigem);
-        Conta contaDestino = DAO.listarPorNumero(numeroDaContaDestino);
-        System.out.println("=======Flag0======");
-        contaOrigem.sacar(saldo);
-        contaDestino.depositar(saldo);
-        DAO.alterar(contaOrigem.getNumero(), contaOrigem.getSaldo());
-        System.out.println("=======Flag1======");
-        DAO.alterar(contaDestino.getNumero(), contaDestino.getSaldo());
-        System.out.println("=======Flag2======");
+        ContaDAO DAO = new ContaDAO(connection.recuperarConexao());
+        try{
+            Conta contaOrigem = DAO.listarPorNumero(numeroDaContaOrigem);
+            Conta contaDestino = DAO.listarPorNumero(numeroDaContaDestino);
+            contaOrigem.sacar(saldo);
+            contaDestino.depositar(saldo);
+            DAO.alterar(contaOrigem.getNumero(), contaOrigem.getSaldo());
+            DAO.alterar(contaDestino.getNumero(), contaDestino.getSaldo());
+        } catch (Exception E){
+            throw new RuntimeException(E);
+        }
+
 
     }
 
@@ -80,7 +78,7 @@ public class ContaService {
         if (conta.possuiSaldo()) {
             throw new RegraDeNegocioException("Conta não pode ser encerrada pois ainda possui saldo!");
         }
-        contas.remove(conta);
+        new ContaDAO(connection.recuperarConexao()).deletar(numeroDaConta);
     }
 
 }

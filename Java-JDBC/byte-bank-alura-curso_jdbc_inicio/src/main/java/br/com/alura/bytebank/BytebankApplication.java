@@ -5,7 +5,6 @@ import br.com.alura.bytebank.domain.cliente.DadosCadastroCliente;
 import br.com.alura.bytebank.domain.conta.ContaService;
 import br.com.alura.bytebank.domain.conta.DadosAberturaConta;
 
-import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class BytebankApplication {
@@ -52,17 +51,6 @@ public class BytebankApplication {
         }
 
         System.out.println("Finalizando a aplicação.");
-    }
-
-    private static void realizartransferencia() {
-        System.out.println("Numero da conta de origem:");
-        var numeroDaContaOrigem = teclado.nextInt();
-        System.out.println("Numero da conta de destino:");
-        var numeroDaContaDestino = teclado.nextInt();
-        System.out.println("valor para a transferencia:");
-        var valorParaTransferencia = teclado.nextBigDecimal();
-
-        service.realizarTransferencia(numeroDaContaOrigem, numeroDaContaDestino, valorParaTransferencia);
     }
 
     private static int exibirMenu() {
@@ -166,6 +154,21 @@ public class BytebankApplication {
 
         System.out.println(conta);
         System.out.println("Pressione qualquer tecla e de ENTER para voltar ao menu principal");
+        teclado.next();
+    }
+
+    private static void realizartransferencia() {
+        System.out.println("Numero da conta de origem:");
+        var numeroDaContaOrigem = teclado.nextInt();
+        System.out.println("Numero da conta de destino:");
+        var numeroDaContaDestino = teclado.nextInt();
+        System.out.println("valor para a transferencia:");
+        var valorParaTransferencia = teclado.nextBigDecimal();
+
+        service.realizarTransferencia(numeroDaContaOrigem, numeroDaContaDestino, valorParaTransferencia);
+
+        System.out.println("Transferência realizada com sucesso");
+        System.out.println("Pressione qualquer tecla e dê ENTER para voltar ao menu principal");
         teclado.next();
     }
 }
