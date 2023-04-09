@@ -5,6 +5,7 @@ import br.com.alura.bytebank.domain.cliente.DadosCadastroCliente;
 import br.com.alura.bytebank.domain.conta.ContaService;
 import br.com.alura.bytebank.domain.conta.DadosAberturaConta;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class BytebankApplication {
@@ -14,7 +15,7 @@ public class BytebankApplication {
 
     public static void main(String[] args) {
         var opcao = exibirMenu();
-        while (opcao != 8) {
+        while (opcao != 9) {
             try {
                 switch (opcao) {
                     case 1:
@@ -38,6 +39,9 @@ public class BytebankApplication {
                     case 7:
                         listarPorNumero();
                         break;
+                    case 8:
+                        realizartransferencia();
+                        break;
                 }
             } catch (RegraDeNegocioException e) {
                 System.out.println("Erro: " +e.getMessage());
@@ -50,6 +54,17 @@ public class BytebankApplication {
         System.out.println("Finalizando a aplicação.");
     }
 
+    private static void realizartransferencia() {
+        System.out.println("Numero da conta de origem:");
+        var numeroDaContaOrigem = teclado.nextInt();
+        System.out.println("Numero da conta de destino:");
+        var numeroDaContaDestino = teclado.nextInt();
+        System.out.println("valor para a transferencia:");
+        var valorParaTransferencia = teclado.nextBigDecimal();
+
+        service.realizarTransferencia(numeroDaContaOrigem, numeroDaContaDestino, valorParaTransferencia);
+    }
+
     private static int exibirMenu() {
         System.out.println("""
                 BYTEBANK - ESCOLHA UMA OPÇÃO:
@@ -60,7 +75,8 @@ public class BytebankApplication {
                 5 - Realizar saque em uma conta
                 6 - Realizar depósito em uma conta
                 7 - Buscar uma conta por número
-                8 - sair
+                8 - Realizar transferência 
+                9 - sair
                 """);
         return teclado.nextInt();
     }

@@ -53,7 +53,22 @@ public class ContaService {
             throw new RegraDeNegocioException("Valor do deposito deve ser superior a zero!");
         }
         Connection conn = connection.recuperarConexao();
-        new ContaDAO(conn).alterar(conta.getNumero(), valor);
+        new ContaDAO(conn).alterar(conta.getNumero(), valor.add(conta.getSaldo()));
+    }
+
+    public void realizarTransferencia(Integer numeroDaContaOrigem, Integer numeroDaContaDestino, BigDecimal saldo) {
+        Connection conn = connection.recuperarConexao();
+        ContaDAO DAO = new ContaDAO(conn);
+        Conta contaOrigem = DAO.listarPorNumero(numeroDaContaOrigem);
+        Conta contaDestino = DAO.listarPorNumero(numeroDaContaDestino);
+        System.out.println("=======Flag0======");
+        contaOrigem.sacar(saldo);
+        contaDestino.depositar(saldo);
+        DAO.alterar(contaOrigem.getNumero(), contaOrigem.getSaldo());
+        System.out.println("=======Flag1======");
+        DAO.alterar(contaDestino.getNumero(), contaDestino.getSaldo());
+        System.out.println("=======Flag2======");
+
     }
 
     public Conta buscarPorNumero(Integer numero) {
