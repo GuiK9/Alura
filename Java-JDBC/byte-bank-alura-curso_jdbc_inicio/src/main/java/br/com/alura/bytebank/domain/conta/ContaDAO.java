@@ -23,7 +23,7 @@ public class ContaDAO {
     public void salvar(DadosAberturaConta dadosDaConta)  {
 
         var cliente = new Cliente(dadosDaConta.dadosCliente());
-        var conta = new Conta(dadosDaConta.numero(), cliente, BigDecimal.ZERO);
+        var conta = new Conta(dadosDaConta.numero(), cliente, BigDecimal.ZERO, Boolean.TRUE);
 
         String sql = "INSERT INTO conta (numero, saldo, cliente_nome, cliente_cpf, cliente_email) VALUES (?, ?, ?, ?, ?)";
         try {
@@ -44,7 +44,7 @@ public class ContaDAO {
 
     public Set<Conta> listar() {
      Set<Conta> contas = new HashSet<>();
-     String sql = "SELECT * FROM conta";
+     String sql = "SELECT * FROM conta WHERE esta_ativa = true";
 
     try{
         PreparedStatement ps = conn.prepareStatement(sql);
@@ -56,9 +56,10 @@ public class ContaDAO {
             String nome = resultset.getString(3);
             String cpf = resultset.getString(4);
             String email = resultset.getString(5);
+            Boolean estaAtiva = resultset.getBoolean(6);
 
             Cliente cliente = new Cliente(new DadosCadastroCliente(nome, cpf, email));
-            contas.add(new Conta(numero, cliente, saldo));
+            contas.add(new Conta(numero, cliente, saldo, estaAtiva));
         }
         resultset.close();
         ps.close();
@@ -72,7 +73,7 @@ public class ContaDAO {
 
     public Conta listarPorNumero(Integer numero){
         PreparedStatement ps;
-        String sql = ("SELECT * FROM conta WHERE numero = ?;");
+        String sql = ("SELECT * FROM conta WHERE numero = ? AND esta_ativa = true;");
         try {
             ps = conn.prepareStatement(sql);
             ps.setInt(1, numero);
@@ -86,9 +87,10 @@ public class ContaDAO {
             String nome = rs.getString(3);
             String cpf = rs.getString(4);
             String email = rs.getString(5);
+            Boolean estaAtiva = rs.getBoolean(6);
 
             Cliente cliente = new Cliente(new DadosCadastroCliente(nome, cpf, email));
-            Conta conta = new Conta(numeroDB, cliente, saldo);
+            Conta conta = new Conta(numeroDB, cliente, saldo, estaAtiva);
 
             ps.close();
             rs.close();
@@ -135,5 +137,20 @@ public class ContaDAO {
             throw new RuntimeException(e);
         }
 
+    }
+
+    public void alterarLogico(Integer numeroDaConta) {
+        PreparedStatement ps;
+        String sql = "UPDATE conta SET esta_ativa = false WHERE numero = ?";
+
+        try{
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1, numeroDaConta);
+            ps.execute();
+            ps.close();
+            conn.close();
+        }catch (SQLException e){
+            throw new RuntimeException(e);
+        }
     }
 }

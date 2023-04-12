@@ -39,6 +39,10 @@ public class ContaService {
             throw new RegraDeNegocioException("Saldo insuficiente!");
         }
 
+        if(!conta.getEstaAtiva()){
+            throw new RegraDeNegocioException("Esta conta está inativa");
+        }
+
         conta.sacar(valor);
         Connection conn = connection.recuperarConexao();
         new ContaDAO(conn).alterar(conta.getNumero(), conta.getSaldo());
@@ -46,6 +50,9 @@ public class ContaService {
 
     public void realizarDeposito(Integer numeroDaConta, BigDecimal valor) {
         Conta conta = buscarPorNumero(numeroDaConta);
+        if(!conta.getEstaAtiva()){
+            throw new RegraDeNegocioException("Esta conta está inativa");
+        }
         if (valor.compareTo(BigDecimal.ZERO) <= 0) {
             throw new RegraDeNegocioException("Valor do deposito deve ser superior a zero!");
         }
@@ -54,24 +61,27 @@ public class ContaService {
     }
 
     public void realizarTransferencia(Integer numeroDaContaOrigem, Integer numeroDaContaDestino, BigDecimal saldo) {
-        ContaDAO DAO = new ContaDAO(connection.recuperarConexao());
         try{
-            Conta contaOrigem = DAO.listarPorNumero(numeroDaContaOrigem);
-            Conta contaDestino = DAO.listarPorNumero(numeroDaContaDestino);
-            contaOrigem.sacar(saldo);
-            contaDestino.depositar(saldo);
-            DAO.alterar(contaOrigem.getNumero(), contaOrigem.getSaldo());
-            DAO.alterar(contaDestino.getNumero(), contaDestino.getSaldo());
+            this.realizarSaque(numeroDaContaOrigem, saldo);
+            this.realizarDeposito(numeroDaContaDestino, saldo);
         } catch (Exception E){
             throw new RuntimeException(E);
         }
-
 
     }
 
     public Conta buscarPorNumero(Integer numero) {
         return new ContaDAO(connection.recuperarConexao()).listarPorNumero(numero);
     }
+
+    public void encerrarLogico(Integer numeroDaConta){
+        var conta = buscarPorNumero(numeroDaConta);
+        if (conta.possuiSaldo()) {
+            throw new RegraDeNegocioException("Conta não pode ser encerrada pois ainda possui saldo!");
+        }
+        new ContaDAO(connection.recuperarConexao()).alterarLogico(numeroDaConta);
+    }
+
 
     public void encerrar(Integer numeroDaConta) {
         var conta = buscarPorNumero(numeroDaConta);
