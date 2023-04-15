@@ -6,8 +6,8 @@
 
     <persistence-unit name="loja" transaction-type="RESOURCE_LOCAL">
         <properties>
-            <property name="javax.persistence.jdbc.driver" value="com.mysql"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/byte_bank"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/loja"/>
             <property name="javax.persistence.jdbc.username" value="root"/>
             <property name="javax.persistence.jdbc.password" value="12345678"/>
             
