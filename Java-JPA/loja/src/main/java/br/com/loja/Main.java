@@ -1,4 +1,4 @@
-package br.com.gen;
+package br.com.loja;
 
 public class Main {
     public static void main(String[] args) {
