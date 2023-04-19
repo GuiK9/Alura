@@ -10,19 +10,35 @@ import java.math.BigDecimal;
 
 public class CadastroDeProduto {
     public static void main(String[] args) {
+        cadastrarProduto();
+        EntityManager em = JPAUtil.getEntityManager();
+        ProdutoDAO produtoDAO = new ProdutoDAO(em);
+
+        Produto p = produtoDAO.buscarPorId(1l);
+        System.out.println(p.getPreco());
+    }
+
+    private static void cadastrarProduto() {
         Produto celular;
         Categoria celulares = new Categoria("CELULARES");
         celular = new Produto("xiaomi", "Muito Legal", new BigDecimal("800"), celulares);
-        celular.setPreco(new BigDecimal("800"));
 
-        EntityManager em = new JPAUtil().getEntityMananger();
-        ProdutoDAO produtoDao = new ProdutoDAO(em);
-        CategoriaDAO categoriaDao = new CategoriaDAO(em);
 
+        EntityManager em = JPAUtil.getEntityManager();
+        CategoriaDAO categoriaDAO= new CategoriaDAO(em);
         em.getTransaction().begin();
-        categoriaDao.cadastrar(celulares);
-        produtoDao.cadastrar(celular);
-        em.getTransaction().commit();
-        em.close();
+
+        em.persist(celulares);
+        celulares.setNome("XPTO");
+
+        em.flush();
+        em.clear();
+
+        celulares.setNome("123456");
+        categoriaDAO.atualizar(celulares);
+
+        em.clear();
+        categoriaDAO.remove(celulares);
+        em.flush();
     }
 }
