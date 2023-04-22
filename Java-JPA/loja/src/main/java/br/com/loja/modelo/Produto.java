@@ -76,5 +76,8 @@ public class Produto {
         this.categoria = categoria;
     }
 
-
+    @Override
+    public String toString() {
+        return "nome: " + this.nome + " descricao: " + this.descricao + " preco: " + this.preco + " categoria: " + this.categoria;
+    }
 }
