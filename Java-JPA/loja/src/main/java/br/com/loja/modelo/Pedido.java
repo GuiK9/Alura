@@ -25,7 +25,7 @@ public class Pedido {
 
     }
 
-    public Pedido(String nome, LocalDate data, Cliente cliente) {
+    public Pedido(Cliente cliente) {
         this.cliente = cliente;
     }
 

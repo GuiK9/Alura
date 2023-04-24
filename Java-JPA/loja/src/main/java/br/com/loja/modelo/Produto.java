@@ -78,6 +78,6 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "nome: " + this.nome + " descricao: " + this.descricao + " preco: " + this.preco + " categoria: " + this.categoria;
+        return "nome: " + this.nome + " descricao: " + this.descricao + " preco: " + this.preco + " categoria: " + this.categoria.getNome() + " ID: " + this.id;
     }
 }
