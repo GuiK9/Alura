@@ -8,25 +8,22 @@ import br.com.loja.modelo.*;
 import br.com.loja.util.JPAUtil;
 import jakarta.persistence.EntityManager;
 
+import java.awt.image.TileObserver;
 import java.math.BigDecimal;
-import java.util.List;
 
 public class CadastroDePedido {
     public static void main(String[] args) {
-        cadastrarProduto();
+        popularDB();
 
         EntityManager em = JPAUtil.getEntityManager();
+
+        ClienteDAO clienteDAO = new ClienteDAO(em);
+        Cliente cliente = clienteDAO.buscarPorId(1l);
 
         ProdutoDAO produtoDAO = new ProdutoDAO(em);
         Produto produto = produtoDAO.buscarPorId(1L);
 
         em.getTransaction().begin();
-
-        Cliente cliente = new Cliente("Rodrigo", "233234");
-
-        ClienteDAO clienteDAO = new ClienteDAO(em);
-        clienteDAO.cadastrar(cliente);
-
         Pedido pedido = new Pedido(cliente);
         pedido.adicionarItem(new ItemPedido(10, pedido, produto));
 
@@ -35,21 +32,27 @@ public class CadastroDePedido {
 
         em.getTransaction().commit();
 
+        BigDecimal totalVendido = pedidoDAO.valorTotalVendido();
+        System.out.println("VALOR TOTAL: " + totalVendido);
+
     }
 
-    private static void cadastrarProduto() {
+    private static void popularDB() {
         Categoria celulares = new Categoria("CELULARES");
         Produto celular = new Produto("xiaomi", "Muito Legal", new BigDecimal("800"), celulares);
+        Cliente cliente = new Cliente("Rodrigo", "233234");
 
 
         EntityManager em = JPAUtil.getEntityManager();
         CategoriaDAO categoriaDAO= new CategoriaDAO(em);
         ProdutoDAO produtoDAO = new ProdutoDAO(em);
+        ClienteDAO clienteDAO = new ClienteDAO(em);
+
         em.getTransaction().begin();
         produtoDAO.cadastrar(celular);
         categoriaDAO.cadastrar(celulares);
+        clienteDAO.cadastrar(cliente);
         em.getTransaction().commit();
-        System.out.println(produtoDAO.buscarTodos() + "==== FLAG ====");
         em.close();
     }
 }

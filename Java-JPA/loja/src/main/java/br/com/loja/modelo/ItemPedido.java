@@ -10,6 +10,8 @@ public class ItemPedido {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    @Column(name = "preco_unitario")
     private BigDecimal precoUnitario;
     private int quantidade;
     @ManyToOne
@@ -59,4 +61,7 @@ public class ItemPedido {
         this.produto = produto;
     }
 
+    public BigDecimal getValorTotal() {
+        return this.precoUnitario.multiply(BigDecimal.valueOf(this.getQuantidade()));
+    }
 }
