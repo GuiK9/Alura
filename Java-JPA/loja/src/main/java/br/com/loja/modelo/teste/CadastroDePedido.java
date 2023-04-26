@@ -1,6 +1,7 @@
 package br.com.loja.modelo.teste;
 
 import br.com.loja.DAO.CategoriaDAO;
+import br.com.loja.DAO.ClienteDAO;
 import br.com.loja.DAO.PedidoDAO;
 import br.com.loja.DAO.ProdutoDAO;
 import br.com.loja.modelo.*;
@@ -15,16 +16,24 @@ public class CadastroDePedido {
         cadastrarProduto();
 
         EntityManager em = JPAUtil.getEntityManager();
+
         ProdutoDAO produtoDAO = new ProdutoDAO(em);
         Produto produto = produtoDAO.buscarPorId(1L);
-        System.out.println(produto + "===============================");
+
+        em.getTransaction().begin();
 
         Cliente cliente = new Cliente("Rodrigo", "233234");
+
+        ClienteDAO clienteDAO = new ClienteDAO(em);
+        clienteDAO.cadastrar(cliente);
+
         Pedido pedido = new Pedido(cliente);
         pedido.adicionarItem(new ItemPedido(10, pedido, produto));
 
         PedidoDAO pedidoDAO = new PedidoDAO(em);
         pedidoDAO.cadastrar(pedido);
+
+        em.getTransaction().commit();
 
     }
 
@@ -39,6 +48,7 @@ public class CadastroDePedido {
         em.getTransaction().begin();
         produtoDAO.cadastrar(celular);
         categoriaDAO.cadastrar(celulares);
+        em.getTransaction().commit();
         System.out.println(produtoDAO.buscarTodos() + "==== FLAG ====");
         em.close();
     }
