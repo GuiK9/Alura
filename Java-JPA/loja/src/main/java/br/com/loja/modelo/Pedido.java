@@ -19,7 +19,7 @@ public class Pedido {
     private LocalDate data = LocalDate.now();
     @OneToMany (mappedBy = "pedido", cascade = CascadeType.ALL)
     private List<ItemPedido> itens = new ArrayList<>();
-    @ManyToOne
+    @ManyToOne (fetch = FetchType.LAZY)
     private Cliente cliente;
 
     public Pedido(){
@@ -66,5 +66,9 @@ public class Pedido {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+
+    public List<ItemPedido> getItens() {
+        return this.itens;
     }
 }
