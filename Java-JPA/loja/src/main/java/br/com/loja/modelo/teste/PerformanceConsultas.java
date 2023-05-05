@@ -16,9 +16,11 @@ public class PerformanceConsultas {
     public static void main(String[] args) {
         popularDB();
         EntityManager em = JPAUtil.getEntityManager();
-        Pedido pedido = em.find(Pedido.class, 1L);
-        System.out.println("============= FLAG ==========");
-        System.out.println(pedido.getItens().size());
+        PedidoDAO pedidoDAO = new PedidoDAO(em);
+        Pedido pedido = pedidoDAO.buscarPedidoComCliente(1L);
+        em.close();
+        System.out.println(pedido.getCliente().getNome());
+
 
 
     }
