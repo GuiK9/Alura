@@ -5,18 +5,19 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "clientes")
 public class Cliente {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String nome;
-    private String cpf;
-
+    @Embedded
+    private DadosPessoais dadosPessoais;
     public Cliente() {
     }
 
     public Cliente(String nome, String cpf) {
-        this.nome = nome;
-        this.cpf = cpf;
+        this.dadosPessoais = new DadosPessoais();
+        this.dadosPessoais.setNome(nome);
+        this.dadosPessoais.setCpf(cpf);
     }
     public Long getId() {
         return id;
@@ -25,21 +26,21 @@ public class Cliente {
     public void setId(Long id) {
         this.id = id;
     }
-    public String getNome() {
-        return nome;
-    }
+    public String getNome() { return dadosPessoais.getNome(); }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        dadosPessoais.setNome(nome);
     }
 
     public String getCpf() {
-        return cpf;
+        return dadosPessoais.getCpf();
     }
 
     public void setCpf(String cpf) {
-        this.cpf = cpf;
+        dadosPessoais.setCpf(cpf);
     }
 
-
+    public DadosPessoais getDadosPessoais() {
+        return dadosPessoais;
+    }
 }
