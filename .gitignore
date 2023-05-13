@@ -5,4 +5,4 @@
 java-io/.idea/
 **/target/
 **/assets/Hiss**
-
+Java-Spring/api/src/main/resources/application.properties
