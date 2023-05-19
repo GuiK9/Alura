@@ -28,4 +28,11 @@ public class PacienteController {
     public Page<DadosListagemPaciente> listar(@PageableDefault(size = 10, sort = {"nome"} ) Pageable page){
         return repository.findAll(page).map(DadosListagemPaciente::new);
     };
+
+    @PutMapping
+    @Transactional
+    public void atualizar(@RequestBody DadosAtualizarPaciente dados){
+        Paciente paciente = repository.getReferenceById(dados.id());
+        paciente.atualizarInformacoes(dados);
+    }
 }
