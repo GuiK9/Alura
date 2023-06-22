@@ -11,7 +11,7 @@ import med.voll.api.domain.endereco.Endereco;
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "paciente")
+@Entity(name = "Paciente")
 @Table(name = "pacientes")
 public class Paciente {
     @Id
