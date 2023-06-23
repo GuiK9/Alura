@@ -4,6 +4,6 @@ import med.voll.api.domain.consulta.DadosAgendamentoConsulta;
 import org.springframework.stereotype.Component;
 
 @Component
-public interface ValidadorAgendamentoDeConsultas {
+public interface ValidadorAgendamento {
     void validar(DadosAgendamentoConsulta dados);
 }
